@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -m mydir 751
+mkdir --mode=751 mydir ./
