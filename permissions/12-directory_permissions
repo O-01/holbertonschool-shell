@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -m {ugo+x,ug+r,u+w} ./mydir
+mkdir -m751 ./mydir
