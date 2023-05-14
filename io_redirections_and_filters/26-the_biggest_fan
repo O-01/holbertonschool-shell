@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -cs "a-zA-Z0-9" "\n" | sort -t -k1,1 -nr | uniq
+tr -cs "a-zA-Z0-9" "\n" | rev | sort -t &'-' -k1 -nr | rev | uniq
