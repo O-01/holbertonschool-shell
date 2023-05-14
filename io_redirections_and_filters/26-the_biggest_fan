@@ -1,2 +1,2 @@
 #!/bin/bash
-cat | tr '\t' '~' | cut -d~ -f1 | tr -cs "a-zA-z0-9" | sort | uniq -c | sort -k1,1nr | cut -c9- | head -n 11
+cat | tail -n +2 | tr '\t' '~' | cut -d~ -f1 | tr -cs "a-zA-z0-9" | sort | uniq -c | sort -k1,1nr | cut -c9- | head -n 11

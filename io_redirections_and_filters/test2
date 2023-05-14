@@ -1,2 +1,2 @@
 #!/bin/bash
-cat ./file2.tsv | tr '\t' '~' | cut -d~ -f1 | tr -cs "a-zA-z0-9" | sort | uniq -c | sort -k1,1nr | cut -c9- | head -n 11
+cat ./file3.tsv | tr -cs "a-zA-z0-9" | sort | uniq -c | sort -k1nr | cut -c9- | head -n 11
