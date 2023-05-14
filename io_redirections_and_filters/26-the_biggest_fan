@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 1- | tr -cs "a-zA-Z0-9" "\n" | sort | uniq -c | sort -nr | cut -d/ -f1
+tr -cs "a-zA-Z0-9" "\n" | sort | uniq -c | sort -nr | cut -d/ -f1
