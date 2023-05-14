@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -cs "a-zA-Z0-9" "\n" | sort -k2 -t'\t' | uniq
+tr -cs "a-zA-Z0-9" "\n" | sort -k1,1 -t &'\t' | uniq
