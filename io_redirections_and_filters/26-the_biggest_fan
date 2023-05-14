@@ -1,0 +1,2 @@
+#!/bin/bash
+cat | tr "\t" "+" | cut -d"+" -f1,2,3,4 | tr -cs "A-za-z0-9" "\n" | sort -nr | uniq | head -n 11
