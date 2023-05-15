@@ -1,2 +1,0 @@
-#!/bin/bash
-tr "cC" io_redirections_and_filters/20-hiago
