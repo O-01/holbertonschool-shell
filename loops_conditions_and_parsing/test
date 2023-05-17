@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Uses for without while or until in order to print Best School 10 times
+for i in $(seq 1 10); do echo -en "Best School\n"; done
