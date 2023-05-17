@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #Display 'Best School' 10 times using while loop and without usage of either for or until
-z=0; while [ $z -le 10 ]; do echo "Best School"; ((z++)); done
+z=1; while [ $z -le 10 ]; do echo "Best School"; ((z++)); done
