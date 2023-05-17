@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #Uses for command (without use of while or unti) in order to print "Best School" string 10 times
-for i in $(seq 1 10); do echo -en "Best School\n"; done
+for x in {1..10} ; do printf "Best School\n%.0s" $x ; done
