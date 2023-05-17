@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Use until to create a loop that repeats "Best School" 10 times without use of either for or while
+pp=0
+until [ $pp -le 10 ]
+do
+    echo "Best School"
+    ((pp++))
+done
