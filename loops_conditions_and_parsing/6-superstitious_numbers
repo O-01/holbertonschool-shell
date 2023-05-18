@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 #Uses while without use of either for or until in order to print "Best School" 10 times with "bad luck from (China, Japan, Italy)" inserted after the 4th, 9th, and 17th iterations respectively
-pp=0
-while [ $pp -le 19 ]
-do echo -e "Best School"
+pp=1
+while [ $pp -le 20 ]
+do printf "%d\n" $pp
    ((pp++))
    case $pp in
-       4)
-	   echo "bad luck from China"
+       5)
+	   echo -e "bad luck from China"
 	   ;;
-       9)
+       10)
 	   echo -e "bad luck from Japan"
 	   ;;
-       17)
+       18)
 	   echo -e "bad luck from Italy"
 	   ;;
    esac
