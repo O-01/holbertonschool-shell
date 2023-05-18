@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#Use while loop (without use of either for or until) in order to create a clock style loop
+pp=0
+kk=0
+while [[ $pp -le 59 ]]
+do
+    if [[ $pp -eq '0' ]]
+    then
+	echo "Hour: " $kk
+    fi
+    if [[ $pp -eq 59 ]]
+    then
+	kk=$((kk+1))
+	echo "Hour: " $kk && pp=0
+    fi
+    pp=$((pp+1))
+    echo "$pp"
+    sleep 1
+    if [[ $kk -eq 12 && $pp -eq 59 ]]
+    then
+	break
+    fi
+done
