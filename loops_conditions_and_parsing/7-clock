@@ -15,7 +15,6 @@ do
     fi
     pp=$((pp+1))
     echo "$pp"
-    sleep 1
     if [[ $kk -eq 12 && $pp -eq 59 ]]
     then
 	break
