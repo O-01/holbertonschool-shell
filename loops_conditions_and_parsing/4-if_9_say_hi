@@ -1,3 +1,13 @@
 #!/usr/bin/env bash
 #Uses while without use of either for or until in order to print "Best School" 10 times with "Hi" inserted after the 9th iteration
-pp=1; while [ $pp -le 10 ]; do echo -e "Best School"; ((pp++)); if [[ "$pp" -eq '10' ]]; then echo "Hi"; continue; fi; done
+pp=0
+while [[ $pp -le 9 ]]
+do
+    if
+	[[ $pp -eq 9 ]]
+    then
+	echo "Hi"
+    fi
+    pp=$((pp+1))
+    echo -e "Best School"
+done
