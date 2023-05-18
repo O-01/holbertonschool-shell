@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Uses while without use of either for or until in order to print "Best School" 10 times with "bad luck from (China, Japan, Italy)" inserted after the 4th, 9th, and 17th iterations respectively
+pp=1
+while [ $pp -le 20 ]
+do echo -e "Best School"
+   ((pp++))
+   if [[ "$pp" -eq '5' ]]
+   then echo -e "bad luck from China"
+	continue
+   elif [[ "$pp" -eq '10' ]]
+   then echo -e "bad luck from Japan"
+	continue
+   elif [[ $pp -eq '18' ]]
+   then echo -e "bad luck from Italy"
+	continue
+   fi;
+done
