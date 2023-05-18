@@ -6,12 +6,12 @@ while [[ $pp -le 59 ]]
 do
     if [[ $pp -eq '0' ]]
     then
-	echo "Hour: " $kk
+	echo "Hour:" $kk
     fi
     if [[ $pp -eq 59 ]]
     then
 	kk=$((kk+1))
-	echo "Hour: " $kk && pp=0
+	echo "Hour:" $kk && pp=0
     fi
     pp=$((pp+1))
     echo "$pp"
