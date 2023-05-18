@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Display current directory contents in list format without leading numerals using for without use of either while or until
-for x in [$(ls)]
+for x in [$(ls)
 do
     printf "%s\n" "$x" | cut -d- -f2
 done
