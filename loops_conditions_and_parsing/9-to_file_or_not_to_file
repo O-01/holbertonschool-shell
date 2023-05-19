@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Writing a bash script that gives information about 'school' file using if and else and without use of case
+ook=school
+test school
+if [ -e $ook ]
+then
+    echo "$ook file exists"
+else
+    echo "$ook file does not exist"
+fi
+if [ -s $ook ]
+then
+    echo "$ook file is empty"
+else
+    echo "$ook file is not empty"
+fi
+if [ -f $ook ]
+then
+   echo "$ook is a regular file"
+fi
