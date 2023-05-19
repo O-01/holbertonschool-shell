@@ -9,9 +9,9 @@ else
 fi
 if [ -s $ook ] 
 then
-    echo "$ook file is empty"
-else
     echo "$ook file is not empty"
+else
+    echo "$ook file is empty"
 fi
 if [ -f $ook ]
 then
