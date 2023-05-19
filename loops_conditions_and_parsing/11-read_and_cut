@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/passwd, displaying username, user id, & user home dir using while & without use of either for or until.
+pp=/etc/passwd
+while IFS= read -r line
+do
+    echo $line
+    printf "%.0s" $pp
+done
