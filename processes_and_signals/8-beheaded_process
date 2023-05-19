@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#SIGKILL invincible toy story process
+pkill -15 -f 7-highlander
