@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Show PIDs along with name of matching pgrep query
+pgrep bash -l
