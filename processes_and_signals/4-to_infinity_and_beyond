@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Some kind of toy story stuff
+v=1
+while [ $v -ge 1 ]
+do
+    echo "To infinity and beyond"
+    v=$((v+1))
+    sleep 2
+done
