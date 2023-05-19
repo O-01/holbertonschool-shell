@@ -14,6 +14,6 @@ do
     then
 	echo "FizzBuzz"
     else
-	printf "%d\n" $x
+	echo "$x"
     fi
 done
