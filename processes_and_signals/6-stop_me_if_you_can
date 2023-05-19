@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Kill toy story process without use of either kill or killall
+pkill -9 4-to_infinity_and_beyond
