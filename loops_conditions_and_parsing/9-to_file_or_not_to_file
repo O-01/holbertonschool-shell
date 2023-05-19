@@ -7,7 +7,7 @@ then
 else
     echo "$ook file does not exist"
 fi
-if [ -s $ook ] 
+if [ -e $ook ] && [ -s $ook ] 
 then
     echo "$ook file is not empty"
 else
