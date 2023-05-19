@@ -3,6 +3,6 @@
 pp=/etc/passwd
 while IFS= read -r line
 do
-    echo $line
+    echo "$line"
     printf "%.0s" $pp
 done
