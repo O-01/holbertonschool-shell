@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Writes 'I am alive!' to /tmp/my_process indefinitely with 2 second sleep time
+zom=1
+while [ $zom -ge 1 ]
+do
+    zom=$((zom+1))
+    echo "I am alive!"
+    sleep 2
+done
