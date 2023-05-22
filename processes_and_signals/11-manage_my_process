@@ -8,7 +8,7 @@ start() {
 
 stop() {
     sudo kill "$(pgrep -f manage_my_process)"
-    sudo rm /var/run/my_process.pid
+    sudo /usr/bin/rm /var/run/my_process.pid
     echo "manage_my_process stopped"
 }
 
