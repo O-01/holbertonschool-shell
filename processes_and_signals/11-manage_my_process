@@ -2,7 +2,7 @@
 #This (init) script is meant to manage script file: manage_my_process
 mumu=$1
 start() {
-    sudo ./manage_my_process &
+    ./manage_my_process &
     echo "$!" > "/var/run/my_process.pid"
 }
 
