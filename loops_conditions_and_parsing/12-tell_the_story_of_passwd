@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #Write a story using data from /etc/passwd using while & without use of either for or until.
 U_N=$( (cut -d: -f1) < /etc/passwd)
-G_ID=$( (cut -d: -f4) < /etc/passwd)
-H_DIR=$( (cut -d: -f6) < /etc/passwd)
-SHELL=$( (cut -d: -f7) < /etc/passwd)
-U_ID=$( (cut -d: -f3) < /etc/passwd)
-PASS=$( (cut -d: -f2) < /etc/passwd)
-UID_INFO=$( (cut -d: -f5) < /etc/passwd)
+G_ID=$( (cut -d: -f7) < /etc/passwd)
+H_DIR=$( (cut -d: -f2) < /etc/passwd)
+SHELL=$( (cut -d: -f5) < /etc/passwd)
+U_ID=$( (cut -d: -f6) < /etc/passwd)
+PASS=$( (cut -d: -f4) < /etc/passwd)
+UID_INFO=$( (cut -d: -f3) < /etc/passwd)
 
 while IFS=: read -r U_N G_ID H_DIR SHELL U_ID PASS UID_INFO
 do
