@@ -7,11 +7,13 @@ case "$1" in
 	echo "manage_my_process started"
 	;;
     stop)
-	sudo kill "$(pgrep -f manage_my_process)" && rm /var/run/my_process.pid
+	sudo kill "$(pgrep -f manage_my_process)"
+	sudo rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
 	;;
     restart)
-	sudo kill "$(pgrep -f manage_my_process)" && rm /var/run/my_process.pid
+	sudo kill "$(pgrep -f manage_my_process)"
+	sudo rm /var/run/my_process.pid
 	sudo bash -c manage_my_process
 	pgrep manage_my_process > /var/run/my_process.pid
 	echo "manage_my_process restarted"
